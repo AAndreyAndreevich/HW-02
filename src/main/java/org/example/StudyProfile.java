@@ -1,5 +1,5 @@
 package org.example;
-/*
+
 public enum StudyProfile {
     DENTIST("Дантист"), SURGEON("Хирург"), PSYCHIATRIST("Психиатр");
 
@@ -8,4 +8,4 @@ public enum StudyProfile {
     StudyProfile(String profileName) {
         this.profileName = profileName;
     }
-}*/
+}

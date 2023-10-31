@@ -1,5 +1,5 @@
 package org.example;
-/*
+
 public class Student {
     String fullName, universityId;
     int currentCourseNumber;
@@ -51,4 +51,4 @@ public class Student {
                 "\nКурс студента: " + currentCourseNumber +
                 "\nСредний экзаменационный балл студента: " + avgExamScore + "\n]===[";
     }
-}*/
+}

@@ -1,5 +1,5 @@
 package org.example;
-/*
+
 public class Main {
     public static void main(String[] args) {
         University uni1 = new University("1", "Университет Дантистов Номер Один", "УДНО", 2023, StudyProfile.DENTIST);
@@ -7,4 +7,4 @@ public class Main {
         System.out.print(uni1);
         System.out.print(stu1);
     }
-}*/
+}

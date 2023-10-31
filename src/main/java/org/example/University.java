@@ -1,5 +1,5 @@
 package org.example;
-/*
+
 public class University {
     String id, fullName, shortName;
     int yearOfFoundation;
@@ -61,4 +61,4 @@ public class University {
                 "\nГод основания Университета: " + yearOfFoundation +
                 "\nОсновная специальность университета: " + mainProfile + "\n]===[";
     }
-}*/
+}
