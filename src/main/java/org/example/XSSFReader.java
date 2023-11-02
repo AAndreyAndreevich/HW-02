@@ -7,7 +7,10 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class XSSFReader extends XSSFWorkbook {
-    public static void main(String[] args) throws Exception {
+    private XSSFReader () {
+
+    }
+    public void studentReader() {
         try {
             FileInputStream file = new FileInputStream(new File("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx"));
             XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -33,6 +36,8 @@ public class XSSFReader extends XSSFWorkbook {
         } catch (Exception e) {
             System.out.println(":(");
         }
+    }
+    public void universityReader() {
         try {
             FileInputStream file = new FileInputStream(new File("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx"));
             XSSFWorkbook workbook = new XSSFWorkbook(file);
