@@ -8,8 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class XSSFReader extends XSSFWorkbook {
     FileInputStream file = new FileInputStream(new File("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx"));
-    XSSFReader() throws IOException {
-    }
+    private XSSFReader() throws IOException {}
     public void studentReader() {
         try {
             XSSFWorkbook workbook = new XSSFWorkbook(file);
