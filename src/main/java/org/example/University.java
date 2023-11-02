@@ -57,8 +57,8 @@ public class University {
     public String toString() {
         return "]===[\nНомер Университета: " + id +
                 "\nПолное название Университета: " + fullName +
-                "\nАбривиатура Университета: " + shortName +
+                "\nАббревиатура Университета: " + shortName +
                 "\nГод основания Университета: " + yearOfFoundation +
-                "\nОсновная специальность университета: " + mainProfile + "\n]===[";
+                "\nПрофиль обучения Университета: " + mainProfile + "\n]===[";
     }
 }
