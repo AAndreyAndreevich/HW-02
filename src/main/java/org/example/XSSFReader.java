@@ -6,12 +6,11 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class XSSFReader extends XSSFWorkbook {
-    FileInputStream file = new FileInputStream(new File("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx"));
-    private XSSFReader() throws IOException {}
+public class XSSFReader {
+    XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx"));
+    protected XSSFReader() throws IOException {}
     public void studentReader() {
         try {
-            XSSFWorkbook workbook = new XSSFWorkbook(file);
             XSSFSheet sheet = workbook.getSheetAt(0);
             Iterator<Row> rowIterator = sheet.iterator();
             rowIterator.next();
@@ -26,18 +25,18 @@ public class XSSFReader extends XSSFWorkbook {
                             break;
                         case STRING:
                             System.out.print(cell.getStringCellValue() + "\t");
+                            break;
                     }
                 }
                 System.out.println();
             }
-            file.close();
+            workbook.close();
         } catch (Exception e) {
-            System.out.println(":(");
+            System.out.println("!:(");
         }
     }
     public void universityReader() {
         try {
-            XSSFWorkbook workbook = new XSSFWorkbook(file);
             XSSFSheet sheet = workbook.getSheetAt(1);
             Iterator<Row> rowIterator = sheet.iterator();
             rowIterator.next();
@@ -51,14 +50,15 @@ public class XSSFReader extends XSSFWorkbook {
                             System.out.printf("%.0f", cell.getNumericCellValue());
                             break;
                         case STRING:
-                            System.out.print(cell.getStringCellValue() + "\t\t");
+                            System.out.print(cell.getStringCellValue() + "\t");
+                            break;
                     }
                 }
                 System.out.println();
             }
-            file.close();
+            workbook.close();
         } catch (Exception e) {
-            System.out.println(":(");
+            System.out.println("!:(");
         }
     }
 }
