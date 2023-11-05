@@ -5,12 +5,7 @@ public class Student {
     int currentCourseNumber;
     float avgExamScore;
 
-    public Student(String universityId, String fullName, int currentCourseNumber, float avgExamScore) {
-        this.universityId = universityId;
-        this.fullName = fullName;
-        this.currentCourseNumber = currentCourseNumber;
-        this.avgExamScore = avgExamScore;
-    }
+    public Student() {}
 
     public String getFullName() {
         return fullName;
@@ -46,9 +41,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "]===[\nПолное имя студента: " + fullName +
+        return "\nПолное имя студента: " + fullName +
                 "\nНомер Университета студента: " + universityId +
                 "\nКурс студента: " + currentCourseNumber +
-                "\nСредний экзаменационный балл студента: " + avgExamScore + "\n]===[";
+                "\nСредний экзаменационный балл студента: " + avgExamScore + "\n";
     }
 }

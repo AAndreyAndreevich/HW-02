@@ -5,13 +5,7 @@ public class University {
     int yearOfFoundation;
     StudyProfile mainProfile;
 
-    public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
-        this.id = id;
-        this.fullName = fullName;
-        this.shortName = shortName;
-        this.yearOfFoundation = yearOfFoundation;
-        this.mainProfile = mainProfile;
-    }
+    public University() {}
 
     public String getId() {
         return id;
@@ -55,10 +49,10 @@ public class University {
 
     @Override
     public String toString() {
-        return "]===[\nНомер Университета: " + id +
+        return "\nНомер Университета: " + id +
                 "\nПолное название Университета: " + fullName +
                 "\nАббревиатура Университета: " + shortName +
                 "\nГод основания Университета: " + yearOfFoundation +
-                "\nПрофиль обучения Университета: " + mainProfile + "\n]===[";
+                "\nПрофиль обучения Университета: " + mainProfile + "\n";
     }
 }

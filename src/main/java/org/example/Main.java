@@ -1,17 +1,21 @@
 package org.example;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) throws Exception {
-        XSSFReader reader = new XSSFReader();
-        reader.universityReader();
-        reader.studentReader();
-        /**
-         * простите, два дня плотно посидел над проектом так и не понял как мне сделать чтобы XSSFReader был привязан
-         *         по оформлению к Student и University, знаю про getRow().getCell(), но они выбирают конкретную ячейку,
-         *         через цикл for и просто i=0 в цикле while увеличивал на 1, все равно не работало так как задумывал,
-         *         по этому пока не знаю что делать, может снизойдет на меня озарение и я пойму как это сделать
-         *
-         *         увидел авторский код.узнал об currentRow.
-         */
+        List<University> universities =
+                XSSFReader.universitiesReader("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx");
+        System.out.println("Университеты");
+        for (University university : universities) {
+            System.out.println(university);
+        }
+
+        List<Student> students =
+                XSSFReader.studentsReader("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx");
+        System.out.println("Студенты");
+        for(Student student : students) {
+            System.out.println(student);
+        }
     }
 }
