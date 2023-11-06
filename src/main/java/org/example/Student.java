@@ -1,9 +1,9 @@
 package org.example;
 
 public class Student {
-    String universityId, fullName;
-    int currentCourseNumber;
-    float avgExamScore;
+    private String universityId, fullName;
+    private int currentCourseNumber;
+    private float avgExamScore;
 
     public Student() {}
 

@@ -3,9 +3,9 @@ package org.example;
 import org.example.enums.StudyProfile;
 
 public class University {
-    String id, fullName, shortName;
-    int yearOfFoundation;
-    StudyProfile mainProfile;
+    private String id, fullName, shortName;
+    private int yearOfFoundation;
+    private StudyProfile mainProfile;
 
     public University() {}
 
