@@ -1,6 +1,6 @@
 package org.example.enums;
 
-public enum enumComparatorUniversities {
+public enum EnumComparatorUniversities {
     SORT_BY_FULL_NAME("Сортировка по названию"),
     SORT_BY_ID("Сортировка по уникальному номеру"),
     SORT_BY_MAIN_PROFILE("Сортировка по обучаемой специальности"),
@@ -9,7 +9,7 @@ public enum enumComparatorUniversities {
 
     private String currentComparator;
 
-    enumComparatorUniversities(String currentComparator) {
+    EnumComparatorUniversities(String currentComparator) {
         this.currentComparator = currentComparator;
     }
 
