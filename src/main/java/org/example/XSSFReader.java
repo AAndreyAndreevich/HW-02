@@ -6,6 +6,8 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.example.enums.StudyProfile;
+import org.example.in_stock.Student;
+import org.example.in_stock.University;
 
 public class XSSFReader {
     private XSSFReader() throws IOException {}

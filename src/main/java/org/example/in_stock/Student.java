@@ -1,4 +1,4 @@
-package org.example;
+package org.example.in_stock;
 
 public class Student {
     private String universityId, fullName;

@@ -1,6 +1,6 @@
 package org.example.comparatorStudents;
 
-import org.example.Student;
+import org.example.in_stock.Student;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Comparator;
