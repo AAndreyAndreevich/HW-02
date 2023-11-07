@@ -1,7 +1,7 @@
 package org.example.comparatorUniversities;
 
 import org.apache.commons.lang3.StringUtils;
-import org.example.in_stock.University;
+import org.example.data.University;
 
 public class SortByShortName implements UniversityComparator {
     @Override

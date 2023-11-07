@@ -1,8 +1,10 @@
 package org.example;
 
+
 import org.example.comparatorStudents.*;
 import org.example.comparatorUniversities.*;
-import org.example.enums.*;
+import org.example.enums.EnumComparatorStudents;
+import org.example.enums.EnumComparatorUniversities;
 
 public class SwitchComparator {
 

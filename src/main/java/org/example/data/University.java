@@ -1,4 +1,4 @@
-package org.example.in_stock;
+package org.example.data;
 
 import org.example.enums.StudyProfile;
 

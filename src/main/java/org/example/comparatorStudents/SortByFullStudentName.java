@@ -1,6 +1,6 @@
 package org.example.comparatorStudents;
 
-import org.example.in_stock.Student;
+import org.example.data.Student;
 import org.apache.commons.lang3.StringUtils;
 
 public class SortByFullStudentName implements StudentComparator {

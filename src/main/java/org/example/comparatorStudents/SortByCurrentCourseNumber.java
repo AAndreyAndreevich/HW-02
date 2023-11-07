@@ -1,6 +1,6 @@
 package org.example.comparatorStudents;
 
-import org.example.in_stock.Student;
+import org.example.data.Student;
 
 public class SortByCurrentCourseNumber implements StudentComparator {
     @Override

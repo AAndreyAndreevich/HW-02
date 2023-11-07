@@ -1,6 +1,6 @@
 package org.example.comparatorUniversities;
 
-import org.example.in_stock.University;
+import org.example.data.University;
 
 import java.util.Comparator;
 
