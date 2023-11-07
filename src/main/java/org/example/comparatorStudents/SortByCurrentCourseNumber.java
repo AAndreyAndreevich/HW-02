@@ -2,17 +2,9 @@ package org.example.comparatorStudents;
 
 import org.example.in_stock.Student;
 
-import java.util.Comparator;
-
-public class SortByCurrentCourseNumber implements Comparator<Student> {
+public class SortByCurrentCourseNumber implements StudentComparator {
     @Override
     public int compare(Student st1, Student st2) {
-        if (st1.getCurrentCourseNumber() == st2.getCurrentCourseNumber()) {
-            return 0;
-        } else if (st1.getCurrentCourseNumber() < st2.getCurrentCourseNumber()) {
-            return -1;
-        } else {
-            return 1;
-        }
+        return Integer.compare(st1.getCurrentCourseNumber(), st2.getCurrentCourseNumber());
     }
 }

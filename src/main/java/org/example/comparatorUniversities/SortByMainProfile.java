@@ -2,9 +2,7 @@ package org.example.comparatorUniversities;
 
 import org.example.in_stock.University;
 
-import java.util.Comparator;
-
-public class SortByMainProfile implements Comparator<University> {
+public class SortByMainProfile implements UniversityComparator {
     @Override
     public int compare(University un1, University un2) {
         if (un1.getMainProfile() == un2.getMainProfile()) {

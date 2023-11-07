@@ -3,9 +3,7 @@ package org.example.comparatorStudents;
 import org.example.in_stock.Student;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Comparator;
-
-public class SortByUniversityId implements Comparator<Student> {
+public class SortByUniversityId implements StudentComparator {
 
     @Override
     public int compare(Student st1, Student st2) {
