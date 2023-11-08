@@ -1,6 +1,5 @@
 package org.example;
 
-
 import org.example.comparatorStudents.*;
 import org.example.comparatorUniversities.*;
 import org.example.enums.EnumComparatorStudents;
