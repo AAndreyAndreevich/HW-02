@@ -1,4 +1,4 @@
-package org.example.data;
+package org.example.education;
 
 import org.example.enums.StudyProfile;
 

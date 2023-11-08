@@ -1,6 +1,6 @@
 package org.example.comparatorUniversities;
 
-import org.example.data.University;
+import org.example.education.University;
 
 public class SortByMainProfile implements UniversityComparator {
     @Override

@@ -1,7 +1,7 @@
 package org.example.comparatorUniversities;
 
 import org.apache.commons.lang3.StringUtils;
-import org.example.data.University;
+import org.example.education.University;
 
 public class SortById implements UniversityComparator {
     @Override

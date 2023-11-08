@@ -1,4 +1,4 @@
-package org.example.data;
+package org.example.education;
 
 public class Student {
     private String universityId, fullName;

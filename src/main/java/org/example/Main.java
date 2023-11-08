@@ -3,7 +3,7 @@ package org.example;
 import org.example.comparatorStudents.*;
 import org.example.comparatorUniversities.*;
 import org.example.enums.*;
-import org.example.data.*;
+import org.example.education.*;
 
 import java.util.List;
 
