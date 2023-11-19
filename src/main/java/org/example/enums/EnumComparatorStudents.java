@@ -6,7 +6,7 @@ public enum EnumComparatorStudents {
     SORT_BY_FULL_NAME("Сортировка по полному имени"),
     SORT_BY_UNIVERSITY_ID("Сортировка по уникальному номеру Университета");
 
-    private String currentComparator;
+    private final String currentComparator;
 
     EnumComparatorStudents(String currentComparator) {
         this.currentComparator = currentComparator;

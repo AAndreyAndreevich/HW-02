@@ -7,7 +7,7 @@ public enum EnumComparatorUniversities {
     SORT_BY_SHORT_NAME("Сортировка по аббревиатуре"),
     SORT_BY_YEAR_OF_FOUNDATION("Сортировка по году основания");
 
-    private String currentComparator;
+    private final String currentComparator;
 
     EnumComparatorUniversities(String currentComparator) {
         this.currentComparator = currentComparator;
