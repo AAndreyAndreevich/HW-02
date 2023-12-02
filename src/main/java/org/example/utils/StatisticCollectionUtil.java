@@ -47,31 +47,8 @@ public class StatisticCollectionUtil {
                     .average();
             statistics.setAvgExamScore(0);
             avgExamScore.ifPresent(value -> statistics.setAvgExamScore(
-                    (float) BigDecimal.valueOf(value).setScale(2, RoundingMode.HALF_UP).doubleValue()
-            ));
+                    (float) BigDecimal.valueOf(value).setScale(2, RoundingMode.HALF_UP).doubleValue()));
         });
         return statisticsList;
     }
 }
-/***    Students
- *     @SerializedName("universityId")
- *     private String universityId;
- *     @SerializedName("studentName")
- *     private String fullName;
- *     @SerializedName("course")
- *     private int currentCourseNumber;
- *     @SerializedName("avgScore")
- *     private float avgExamScore;
- */
-/***    Universities
- *     @SerializedName("universityId")
- *     private String id;
- *     @SerializedName("universityName")
- *     private String fullName;
- *     @SerializedName("universityShortName")
- *     private String shortName;
- *     @SerializedName("foundation")
- *     private int yearOfFoundation;
- *     @SerializedName("profile")
- *     private StudyProfile mainProfile;
- */

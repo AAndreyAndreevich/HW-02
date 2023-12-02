@@ -45,11 +45,3 @@ public class XLSWriter {
         }
     }
 }
-
-/***
- *     private String mainProfile;
- *     private float avgExamScore;
- *     private int quantityStudentsByProfile;
- *     private int quantityUniversitiesByProfile;
- *     private int nameUniversity;
- */
