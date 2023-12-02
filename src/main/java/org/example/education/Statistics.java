@@ -3,51 +3,56 @@ package org.example.education;
 import org.example.enums.StudyProfile;
 
 public class Statistics {
-    private StudyProfile mainProfile;
+    private StudyProfile profile;
     private float avgExamScore;
-    private int quantityStudentsByProfile;
-    private int quantityUniversitiesByProfile;
-    private String nameUniversity;
+    private int numberOfStudents;
+    private int numberOfUniversities;
+    private String universityName;
 
     public Statistics(){}
 
-    public StudyProfile getMainProfile() {
-        return mainProfile;
+    public StudyProfile getProfile() {
+        return profile;
     }
 
-    public void setMainProfile(StudyProfile mainProfile) {
-        this.mainProfile = mainProfile;
+    public Statistics setProfile(StudyProfile profile) {
+        this.profile = profile;
+        return this;
     }
 
     public float getAvgExamScore() {
         return avgExamScore;
     }
 
-    public void setAvgExamScore(float avgExamScore) {
+    public Statistics setAvgExamScore(float avgExamScore) {
         this.avgExamScore = avgExamScore;
+        return this;
     }
 
-    public int getQuantityStudentsByProfile() {
-        return quantityStudentsByProfile;
+    public int getNumberOfStudents() {
+        return numberOfStudents;
     }
 
-    public void setQuantityStudentsByProfile(int quantityStudentsByProfile) {
-        this.quantityStudentsByProfile = quantityStudentsByProfile;
+    public Statistics setNumberOfStudents(int numberOfStudents) {
+        this.numberOfStudents = numberOfStudents;
+        return this;
     }
 
-    public int getQuantityUniversitiesByProfile() {
-        return quantityUniversitiesByProfile;
+    public int getNumberOfUniversities() {
+        return numberOfUniversities;
     }
 
-    public void setQuantityUniversitiesByProfile(int quantityUniversitiesByProfile) {
-        this.quantityUniversitiesByProfile = quantityUniversitiesByProfile;
+    public Statistics setNumberOfUniversities(int numberOfUniversities) {
+        this.numberOfUniversities = numberOfUniversities;
+        return this;
     }
 
-    public String getNameUniversity() {
-        return nameUniversity;
+    public String getUniversityName() {
+        return universityName;
     }
 
-    public void setNameUniversity(String nameUniversity) {
-        this.nameUniversity = nameUniversity;
+    public Statistics setUniversityName(String universityName) {
+        this.universityName = universityName;
+        return this;
     }
 }

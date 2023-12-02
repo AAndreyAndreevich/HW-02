@@ -33,11 +33,11 @@ public class XLSWriter {
         row.getCell(4).setCellStyle(style);
         for (Statistics statistics : statisticsList) {
             sheet.createRow(rowNum++);
-            row.createCell(0).setCellValue(statistics.getMainProfile().getProfileName());
+            row.createCell(0).setCellValue(statistics.getProfile().getProfileName());
             row.createCell(1).setCellValue(statistics.getAvgExamScore());
-            row.createCell(2).setCellValue(statistics.getQuantityStudentsByProfile());
-            row.createCell(3).setCellValue(statistics.getQuantityUniversitiesByProfile());
-            row.createCell(4).setCellValue(statistics.getNameUniversity());
+            row.createCell(2).setCellValue(statistics.getNumberOfStudents());
+            row.createCell(3).setCellValue(statistics.getNumberOfUniversities());
+            row.createCell(4).setCellValue(statistics.getUniversityName());
         }
         try (FileOutputStream fos = new FileOutputStream(filePath)) {
             workbook.write(fos);

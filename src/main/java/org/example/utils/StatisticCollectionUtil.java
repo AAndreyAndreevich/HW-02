@@ -19,30 +19,29 @@ public class StatisticCollectionUtil {
 
     public static List<Statistics> statisticsCollection(List<Student> students, List<University> universities) {
         List<Statistics> statisticsList = new ArrayList<>();
-        Set<StudyProfile> studyProfiles = universities.stream()
+        Set<StudyProfile> profiles = universities.stream()
                 .map(University::getMainProfile)
                 .collect(Collectors.toSet());
-        studyProfiles.forEach(studyProfile -> {
+        profiles.forEach(profile -> {
             Statistics statistics = new Statistics();
             statisticsList.add(statistics);
-            statistics.setMainProfile(studyProfile);
-
-            List<String> quantityUniversityProfile = universities.stream()
-                    .filter(university -> university.getMainProfile().equals(studyProfile))
+            statistics.setProfile(profile);
+            List<String> profileUniversityIds = universities.stream()
+                    .filter(university -> university.getMainProfile().equals(profile))
                     .map(University::getId)
                     .collect(Collectors.toList());
-            statistics.setQuantityUniversitiesByProfile(quantityUniversityProfile.size());
-            statistics.setNameUniversity(StringUtils.EMPTY);
+            statistics.setNumberOfUniversities(profileUniversityIds.size());
+            statistics.setUniversityName(StringUtils.EMPTY);
             universities.stream()
-                    .filter(university -> quantityUniversityProfile.contains(university.getId()))
+                    .filter(university -> profileUniversityIds.contains(university.getId()))
                     .map(University::getFullName)
-                    .forEach(universityName -> statistics.setNameUniversity(
-                            statistics.getNameUniversity() + universityName + ";"));
-            List<Student> studentsProfiles = students.stream()
-                    .filter(student -> quantityUniversityProfile.contains(student.getUniversityId()))
+                    .forEach(fullNameUniversity -> statistics.setUniversityName(
+                            statistics.getUniversityName() + fullNameUniversity + ";"));
+            List<Student> profileStudents = students.stream()
+                    .filter(student -> profileUniversityIds.contains(student.getUniversityId()))
                     .collect(Collectors.toList());
-            statistics.setQuantityStudentsByProfile(studentsProfiles.size());
-            OptionalDouble avgExamScore = studentsProfiles.stream()
+            statistics.setNumberOfStudents(profileStudents.size());
+            OptionalDouble avgExamScore = profileStudents.stream()
                     .mapToDouble(Student::getAvgExamScore)
                     .average();
             statistics.setAvgExamScore(0);
