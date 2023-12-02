@@ -10,7 +10,7 @@ import org.example.education.Student;
 import org.example.education.University;
 
 public class XSSFReader {
-    private XSSFReader() throws IOException {}
+    private XSSFReader(){}
 
     public static List<University> universitiesReader(String filePath) throws IOException {
         List<University> universities = new ArrayList<>();

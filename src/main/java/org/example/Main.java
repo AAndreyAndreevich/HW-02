@@ -41,5 +41,8 @@ public class Main {
             Student studentFromJson = JsonUtil.jsonToStudent(studentJson);
             System.out.println(studentFromJson);
         });
+
+        List<Statistics> statisticsList = StatisticCollectionUtil.statisticsCollection(students, universities);
+        XLSWriter.statisticsWriter(statisticsList, "D:\\an projects\\HW-02\\src\\main\\resources\\statistics.xlsx");
     }
 }
