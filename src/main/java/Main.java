@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Path universityInfoPath = Path.of("D:\\an projects\\HW-02\\src\\main\\resources\\statistics.xlsx");
-        Path statisticsPath = Path.of("D:\\an projects\\HW-02\\src\\main\\resources\\universityInfo.xlsx");
+        Path universityInfoPath = Path.of("src\\main\\resources\\universityInfo.xlsx");
+        Path statisticsPath = Path.of("src\\main\\resources\\statistics.xlsx");
         List<University> universities =
                 XSSFReader.universitiesReader(universityInfoPath);
         UniversityComparator universityComparator =
