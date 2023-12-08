@@ -1,0 +1,11 @@
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+дек. 08, 2023 4:14:24 PM utils.XSSFReader universitiesReader
+INFO: Получен список Университетов
+дек. 08, 2023 4:14:24 PM utils.XSSFReader studentsReader
+INFO: Получен список Студентов
+дек. 08, 2023 4:14:24 PM utils.StatisticCollectionUtil statisticsCollection
+INFO: Собрана статистика Университетов
+дек. 08, 2023 4:14:24 PM utils.XLSWriter statisticsWriter
+INFO: Статистика внесена в таблицу
+дек. 08, 2023 4:14:24 PM Main main
+INFO: Работа с таблицами окончена

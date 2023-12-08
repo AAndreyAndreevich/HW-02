@@ -4,11 +4,22 @@ import education.*;
 import enums.*;
 import utils.*;
 
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    private static final Logger logger = Logger.getLogger(Main.class.getSimpleName());
+    public static void main(String[] args) {
+        try {
+            LogManager.getLogManager().readConfiguration(
+                    Main.class.getResourceAsStream("/logging.properties"));
+        } catch (IOException e) {
+            System.err.println("Отсутствует конфигурация " + e.getMessage());
+        }
         Path universityInfoPath = Path.of("src\\main\\resources\\universityInfo.xlsx");
         Path statisticsPath = Path.of("src\\main\\resources\\statistics.xlsx");
         List<University> universities =
@@ -25,5 +36,6 @@ public class Main {
 
         List<Statistics> statisticsList = StatisticCollectionUtil.statisticsCollection(students, universities);
         XLSWriter.statisticsWriter(statisticsList, statisticsPath);
+        logger.log(Level.INFO, "Работа с таблицами окончена");
     }
 }

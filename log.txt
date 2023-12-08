@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-08T13:15:08.869507900Z</date>
+  <millis>1702041308869</millis>
+  <nanos>507900</nanos>
+  <sequence>0</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>universitiesReader</method>
+  <thread>1</thread>
+  <message>Получен список Университетов</message>
+</record>
+<record>
+  <date>2023-12-08T13:15:08.995428800Z</date>
+  <millis>1702041308995</millis>
+  <nanos>428800</nanos>
+  <sequence>1</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>studentsReader</method>
+  <thread>1</thread>
+  <message>Получен список Студентов</message>
+</record>
+<record>
+  <date>2023-12-08T13:15:09.009421700Z</date>
+  <millis>1702041309009</millis>
+  <nanos>421700</nanos>
+  <sequence>2</sequence>
+  <logger>StatisticCollectionUtil</logger>
+  <level>INFO</level>
+  <class>utils.StatisticCollectionUtil</class>
+  <method>statisticsCollection</method>
+  <thread>1</thread>
+  <message>Собрана статистика Университетов</message>
+</record>
+<record>
+  <date>2023-12-08T13:15:09.268261700Z</date>
+  <millis>1702041309268</millis>
+  <nanos>261700</nanos>
+  <sequence>3</sequence>
+  <logger>XLSWriter</logger>
+  <level>INFO</level>
+  <class>utils.XLSWriter</class>
+  <method>statisticsWriter</method>
+  <thread>1</thread>
+  <message>Статистика внесена в таблицу</message>
+</record>
+<record>
+  <date>2023-12-08T13:15:09.269261800Z</date>
+  <millis>1702041309269</millis>
+  <nanos>261800</nanos>
+  <sequence>4</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Работа с таблицами окончена</message>
+</record>
+</log>
