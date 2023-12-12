@@ -1,11 +1,11 @@
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-дек. 08, 2023 4:14:24 PM utils.XSSFReader universitiesReader
-INFO: Получен список Университетов
-дек. 08, 2023 4:14:24 PM utils.XSSFReader studentsReader
-INFO: Получен список Студентов
-дек. 08, 2023 4:14:24 PM utils.StatisticCollectionUtil statisticsCollection
-INFO: Собрана статистика Университетов
-дек. 08, 2023 4:14:24 PM utils.XLSWriter statisticsWriter
-INFO: Статистика внесена в таблицу
-дек. 08, 2023 4:14:24 PM Main main
-INFO: Работа с таблицами окончена
+РґРµРє. 08, 2023 4:15:08 PM utils.XSSFReader universitiesReader
+INFO: РџРѕР»СѓС‡РµРЅ СЃРїРёСЃРѕРє РЈРЅРёРІРµСЂСЃРёС‚РµС‚РѕРІ
+РґРµРє. 08, 2023 4:15:08 PM utils.XSSFReader studentsReader
+INFO: РџРѕР»СѓС‡РµРЅ СЃРїРёСЃРѕРє РЎС‚СѓРґРµРЅС‚РѕРІ
+РґРµРє. 08, 2023 4:15:09 PM utils.StatisticCollectionUtil statisticsCollection
+INFO: РЎРѕР±СЂР°РЅР° СЃС‚Р°С‚РёСЃС‚РёРєР° РЈРЅРёРІРµСЂСЃРёС‚РµС‚РѕРІ
+РґРµРє. 08, 2023 4:15:09 PM utils.XLSWriter statisticsWriter
+INFO: РЎС‚Р°С‚РёСЃС‚РёРєР° РІРЅРµСЃРµРЅР° РІ С‚Р°Р±Р»РёС†Сѓ
+РґРµРє. 08, 2023 4:15:09 PM Main main
+INFO: Р Р°Р±РѕС‚Р° СЃ С‚Р°Р±Р»РёС†Р°РјРё РѕРєРѕРЅС‡РµРЅР°
