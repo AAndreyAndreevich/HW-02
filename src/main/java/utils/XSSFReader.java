@@ -61,7 +61,6 @@ public class XSSFReader {
                 university.setMainProfile(StudyProfile.valueOf(StudyProfile.class, row.getCell(4).getStringCellValue()));
             }
             logger.info("Получен список Университетов");
-            workbook.close();
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Ошибка: {0} ", e.getMessage());
         }

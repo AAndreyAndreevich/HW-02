@@ -48,7 +48,6 @@ public class XLSWriter {
             }
             try (FileOutputStream fos = new FileOutputStream(filePath.toFile())) {
                 workbook.write(fos);
-                workbook.close();
             }
             logger.log(Level.INFO, "Статистика внесена в таблицу");
         } catch (IOException e) {

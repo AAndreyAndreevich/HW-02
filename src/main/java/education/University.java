@@ -2,16 +2,27 @@ package education;
 
 import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class University {
+
     @SerializedName("universityId")
     private String id;
+
     @SerializedName("universityName")
     private String fullName;
+
     @SerializedName("universityShortName")
     private String shortName;
+
     @SerializedName("foundation")
     private int yearOfFoundation;
+
     @SerializedName("profile")
     private StudyProfile mainProfile;
 
@@ -21,6 +32,7 @@ public class University {
         return id;
     }
 
+    @XmlElement
     public void setId(String id) {
         this.id = id;
     }
@@ -29,6 +41,7 @@ public class University {
         return fullName;
     }
 
+    @XmlElement
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -37,6 +50,7 @@ public class University {
         return shortName;
     }
 
+    @XmlElement
     public void setShortName(String shortName) {
         this.shortName = shortName;
     }
@@ -45,6 +59,7 @@ public class University {
         return yearOfFoundation;
     }
 
+    @XmlElement
     public void setYearOfFoundation(int yearOfFoundation) {
         this.yearOfFoundation = yearOfFoundation;
     }
@@ -53,6 +68,7 @@ public class University {
         return mainProfile;
     }
 
+    @XmlElement
     public void setMainProfile(StudyProfile mainProfile) {
         this.mainProfile = mainProfile;
     }
