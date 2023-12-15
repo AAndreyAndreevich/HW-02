@@ -1,17 +1,15 @@
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-дек. 15, 2023 8:26:11 PM utils.XSSFReader universitiesReader
+дек. 15, 2023 10:16:31 PM utils.XSSFReader universitiesReader
 INFO: Получен список Университетов
-дек. 15, 2023 8:26:11 PM utils.XSSFReader studentsReader
+дек. 15, 2023 10:16:31 PM utils.XSSFReader studentsReader
 INFO: Получен список Студентов
-дек. 15, 2023 8:26:11 PM utils.StatisticCollectionUtil statisticsCollection
+дек. 15, 2023 10:16:31 PM utils.StatisticCollectionUtil statisticsCollection
 INFO: Собрана статистика Университетов
-дек. 15, 2023 8:26:11 PM utils.XLSWriter statisticsWriter
+дек. 15, 2023 10:16:31 PM utils.XLSWriter statisticsWriter
 INFO: Статистика внесена в таблицу
-дек. 15, 2023 8:26:12 PM utils.JaxbUtil writer
-SEVERE: Ошибка src\xmlReqs
-дек. 15, 2023 8:26:12 PM utils.JaxbUtil writer
-SEVERE: Ошибка null
-дек. 15, 2023 8:26:12 PM utils.JaxbUtil writer
+дек. 15, 2023 10:16:31 PM utils.JaxbUtil writer
+SEVERE: Ошибка 1 counts of IllegalAnnotationExceptions
+дек. 15, 2023 10:16:31 PM utils.JaxbUtil writer
 INFO: Работа JAXB окончена
-дек. 15, 2023 8:26:12 PM Main main
+дек. 15, 2023 10:16:31 PM Main main
 INFO: Работа с таблицами окончена

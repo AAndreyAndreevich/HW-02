@@ -2,6 +2,7 @@ package model;
 
 import jakarta.xml.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @XmlRootElement(name = "Данные")
@@ -16,6 +17,8 @@ public class ModelsLists {
     @XmlElementWrapper(name = "statisticsList")
     @XmlElement(name = "statisticsList")
     private List<Statistics> statisticsList;
+    @XmlElement(name = "date")
+    private Date date;
 
     public ModelsLists() {
     }
@@ -33,6 +36,15 @@ public class ModelsLists {
     public ModelsLists setStatisticsList(List<Statistics> statisticsList) {
         this.statisticsList = statisticsList;
         return this;
+    }
+
+    public ModelsLists setDate(Date date) {
+        this.date = date;
+        return this;
+    }
+
+    public Date getDate() {
+        return date;
     }
 
     public List<Student> getStudentList() {

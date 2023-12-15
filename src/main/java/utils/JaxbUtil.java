@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -27,7 +28,7 @@ public class JaxbUtil {
             } catch (IOException ioEx) {
                 logger.log(Level.SEVERE, "Ошибка {0}", ioEx.getMessage());
             }
-            File createReq = new File("xmlReqs\\req.xml");
+            File createReq = new File("xmlReqs\\req"+ new Date().getTime() +".xml");
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             marshaller.marshal(modelLists, createReq);
         } catch (JAXBException jaxbE) {

@@ -1,5 +1,17 @@
-Exception in thread "main" java.lang.NullPointerException: inStream parameter is null
-	at java.base/java.util.Objects.requireNonNull(Objects.java:259)
-	at java.base/java.util.Properties.load(Properties.java:408)
-	at java.logging/java.util.logging.LogManager.readConfiguration(LogManager.java:1585)
-	at Main.main(Main.java:18)
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+дек. 15, 2023 10:18:43 PM utils.XSSFReader universitiesReader
+INFO: Получен список Университетов
+дек. 15, 2023 10:18:43 PM utils.XSSFReader studentsReader
+INFO: Получен список Студентов
+дек. 15, 2023 10:18:43 PM utils.StatisticCollectionUtil statisticsCollection
+INFO: Собрана статистика Университетов
+дек. 15, 2023 10:18:44 PM utils.XLSWriter statisticsWriter
+INFO: Статистика внесена в таблицу
+дек. 15, 2023 10:18:44 PM utils.JaxbUtil writer
+SEVERE: Ошибка src\xmlReqs
+дек. 15, 2023 10:18:44 PM utils.JaxbUtil writer
+SEVERE: Ошибка null
+дек. 15, 2023 10:18:44 PM utils.JaxbUtil writer
+INFO: Работа JAXB окончена
+дек. 15, 2023 10:18:44 PM Main main
+INFO: Работа с таблицами окончена

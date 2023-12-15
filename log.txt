@@ -498,3 +498,279 @@
   <message>Работа с таблицами окончена</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-15T19:15:29.278941300Z</date>
+  <millis>1702667729278</millis>
+  <nanos>941300</nanos>
+  <sequence>0</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>universitiesReader</method>
+  <thread>1</thread>
+  <message>Получен список Университетов</message>
+</record>
+<record>
+  <date>2023-12-15T19:15:29.407861500Z</date>
+  <millis>1702667729407</millis>
+  <nanos>861500</nanos>
+  <sequence>1</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>studentsReader</method>
+  <thread>1</thread>
+  <message>Получен список Студентов</message>
+</record>
+<record>
+  <date>2023-12-15T19:15:29.423853800Z</date>
+  <millis>1702667729423</millis>
+  <nanos>853800</nanos>
+  <sequence>2</sequence>
+  <logger>StatisticCollectionUtil</logger>
+  <level>INFO</level>
+  <class>utils.StatisticCollectionUtil</class>
+  <method>statisticsCollection</method>
+  <thread>1</thread>
+  <message>Собрана статистика Университетов</message>
+</record>
+<record>
+  <date>2023-12-15T19:15:29.711227800Z</date>
+  <millis>1702667729711</millis>
+  <nanos>227800</nanos>
+  <sequence>3</sequence>
+  <logger>XLSWriter</logger>
+  <level>INFO</level>
+  <class>utils.XLSWriter</class>
+  <method>statisticsWriter</method>
+  <thread>1</thread>
+  <message>Статистика внесена в таблицу</message>
+</record>
+<record>
+  <date>2023-12-15T19:15:29.949083700Z</date>
+  <millis>1702667729949</millis>
+  <nanos>83700</nanos>
+  <sequence>4</sequence>
+  <logger>JaxbUtil</logger>
+  <level>SEVERE</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Ошибка 1 counts of IllegalAnnotationExceptions</message>
+</record>
+<record>
+  <date>2023-12-15T19:15:29.951082600Z</date>
+  <millis>1702667729951</millis>
+  <nanos>82600</nanos>
+  <sequence>5</sequence>
+  <logger>JaxbUtil</logger>
+  <level>INFO</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Работа JAXB окончена</message>
+</record>
+<record>
+  <date>2023-12-15T19:15:29.951082600Z</date>
+  <millis>1702667729951</millis>
+  <nanos>82600</nanos>
+  <sequence>6</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Работа с таблицами окончена</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-15T19:16:31.285227100Z</date>
+  <millis>1702667791285</millis>
+  <nanos>227100</nanos>
+  <sequence>0</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>universitiesReader</method>
+  <thread>1</thread>
+  <message>Получен список Университетов</message>
+</record>
+<record>
+  <date>2023-12-15T19:16:31.415147200Z</date>
+  <millis>1702667791415</millis>
+  <nanos>147200</nanos>
+  <sequence>1</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>studentsReader</method>
+  <thread>1</thread>
+  <message>Получен список Студентов</message>
+</record>
+<record>
+  <date>2023-12-15T19:16:31.429138500Z</date>
+  <millis>1702667791429</millis>
+  <nanos>138500</nanos>
+  <sequence>2</sequence>
+  <logger>StatisticCollectionUtil</logger>
+  <level>INFO</level>
+  <class>utils.StatisticCollectionUtil</class>
+  <method>statisticsCollection</method>
+  <thread>1</thread>
+  <message>Собрана статистика Университетов</message>
+</record>
+<record>
+  <date>2023-12-15T19:16:31.673987700Z</date>
+  <millis>1702667791673</millis>
+  <nanos>987700</nanos>
+  <sequence>3</sequence>
+  <logger>XLSWriter</logger>
+  <level>INFO</level>
+  <class>utils.XLSWriter</class>
+  <method>statisticsWriter</method>
+  <thread>1</thread>
+  <message>Статистика внесена в таблицу</message>
+</record>
+<record>
+  <date>2023-12-15T19:16:31.869867300Z</date>
+  <millis>1702667791869</millis>
+  <nanos>867300</nanos>
+  <sequence>4</sequence>
+  <logger>JaxbUtil</logger>
+  <level>SEVERE</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Ошибка 1 counts of IllegalAnnotationExceptions</message>
+</record>
+<record>
+  <date>2023-12-15T19:16:31.871867200Z</date>
+  <millis>1702667791871</millis>
+  <nanos>867200</nanos>
+  <sequence>5</sequence>
+  <logger>JaxbUtil</logger>
+  <level>INFO</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Работа JAXB окончена</message>
+</record>
+<record>
+  <date>2023-12-15T19:16:31.871867200Z</date>
+  <millis>1702667791871</millis>
+  <nanos>867200</nanos>
+  <sequence>6</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Работа с таблицами окончена</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-15T19:18:43.786554500Z</date>
+  <millis>1702667923786</millis>
+  <nanos>554500</nanos>
+  <sequence>0</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>universitiesReader</method>
+  <thread>1</thread>
+  <message>Получен список Университетов</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:43.910615300Z</date>
+  <millis>1702667923910</millis>
+  <nanos>615300</nanos>
+  <sequence>1</sequence>
+  <logger>XSSFReader</logger>
+  <level>INFO</level>
+  <class>utils.XSSFReader</class>
+  <method>studentsReader</method>
+  <thread>1</thread>
+  <message>Получен список Студентов</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:43.924755800Z</date>
+  <millis>1702667923924</millis>
+  <nanos>755800</nanos>
+  <sequence>2</sequence>
+  <logger>StatisticCollectionUtil</logger>
+  <level>INFO</level>
+  <class>utils.StatisticCollectionUtil</class>
+  <method>statisticsCollection</method>
+  <thread>1</thread>
+  <message>Собрана статистика Университетов</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:44.176640200Z</date>
+  <millis>1702667924176</millis>
+  <nanos>640200</nanos>
+  <sequence>3</sequence>
+  <logger>XLSWriter</logger>
+  <level>INFO</level>
+  <class>utils.XLSWriter</class>
+  <method>statisticsWriter</method>
+  <thread>1</thread>
+  <message>Статистика внесена в таблицу</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:44.429484500Z</date>
+  <millis>1702667924429</millis>
+  <nanos>484500</nanos>
+  <sequence>4</sequence>
+  <logger>JaxbUtil</logger>
+  <level>SEVERE</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Ошибка src\xmlReqs</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:44.437480900Z</date>
+  <millis>1702667924437</millis>
+  <nanos>480900</nanos>
+  <sequence>5</sequence>
+  <logger>JaxbUtil</logger>
+  <level>SEVERE</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Ошибка null</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:44.438479Z</date>
+  <millis>1702667924438</millis>
+  <nanos>479000</nanos>
+  <sequence>6</sequence>
+  <logger>JaxbUtil</logger>
+  <level>INFO</level>
+  <class>utils.JaxbUtil</class>
+  <method>writer</method>
+  <thread>1</thread>
+  <message>Работа JAXB окончена</message>
+</record>
+<record>
+  <date>2023-12-15T19:18:44.439479200Z</date>
+  <millis>1702667924439</millis>
+  <nanos>479200</nanos>
+  <sequence>7</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Работа с таблицами окончена</message>
+</record>
+</log>
