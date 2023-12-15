@@ -1,6 +1,6 @@
 package comparatorStudents;
 
-import education.Student;
+import model.Student;
 import org.apache.commons.lang3.StringUtils;
 
 public class SortByFullStudentName implements StudentComparator {

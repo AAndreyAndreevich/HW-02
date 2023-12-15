@@ -1,4 +1,4 @@
-package education;
+package model;
 
 import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
@@ -7,22 +7,27 @@ import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name = "Университеты")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class University {
 
-    @SerializedName("universityId")
+    @XmlElement(name = "id")
+    @SerializedName("id")
     private String id;
 
-    @SerializedName("universityName")
+    @XmlElement(name = "name")
+    @SerializedName("name")
     private String fullName;
 
-    @SerializedName("universityShortName")
+    @XmlElement(name = "shortName")
+    @SerializedName("shortName")
     private String shortName;
 
-    @SerializedName("foundation")
+    @XmlElement(name = "yearOfFoundation")
+    @SerializedName("yearOfFoundation")
     private int yearOfFoundation;
 
+    @XmlElement(name = "profile")
     @SerializedName("profile")
     private StudyProfile mainProfile;
 
@@ -32,45 +37,45 @@ public class University {
         return id;
     }
 
-    @XmlElement
-    public void setId(String id) {
+    public University setId(String id) {
         this.id = id;
+        return this;
     }
 
     public String getFullName() {
         return fullName;
     }
 
-    @XmlElement
-    public void setFullName(String fullName) {
+    public University setFullName(String fullName) {
         this.fullName = fullName;
+        return this;
     }
 
     public String getShortName() {
         return shortName;
     }
 
-    @XmlElement
-    public void setShortName(String shortName) {
+    public University setShortName(String shortName) {
         this.shortName = shortName;
+        return this;
     }
 
     public int getYearOfFoundation() {
         return yearOfFoundation;
     }
 
-    @XmlElement
-    public void setYearOfFoundation(int yearOfFoundation) {
+    public University setYearOfFoundation(int yearOfFoundation) {
         this.yearOfFoundation = yearOfFoundation;
+        return this;
     }
 
     public StudyProfile getMainProfile() {
         return mainProfile;
     }
 
-    @XmlElement
-    public void setMainProfile(StudyProfile mainProfile) {
+    public University setMainProfile(StudyProfile mainProfile) {
         this.mainProfile = mainProfile;
+        return this;
     }
 
     @Override

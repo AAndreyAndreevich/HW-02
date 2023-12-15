@@ -1,7 +1,7 @@
 package comparatorUniversities;
 
 import org.apache.commons.lang3.StringUtils;
-import education.University;
+import model.University;
 
 public class SortById implements UniversityComparator {
     @Override

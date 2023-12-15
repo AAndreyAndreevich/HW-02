@@ -1,9 +1,9 @@
 package utils;
 
 import org.apache.commons.lang3.StringUtils;
-import education.Statistics;
-import education.Student;
-import education.University;
+import model.Statistics;
+import model.Student;
+import model.University;
 import enums.StudyProfile;
 
 import java.math.BigDecimal;

@@ -1,6 +1,6 @@
 import comparatorStudents.StudentComparator;
 import comparatorUniversities.UniversityComparator;
-import education.*;
+import model.*;
 import enums.*;
 import utils.*;
 
@@ -22,6 +22,7 @@ public class Main {
         }
         Path universityInfoPath = Path.of("src\\main\\resources\\universityInfo.xlsx");
         Path statisticsPath = Path.of("src\\main\\resources\\statistics.xlsx");
+
         List<University> universities =
                 XSSFReader.universitiesReader(universityInfoPath);
         UniversityComparator universityComparator =
@@ -36,6 +37,13 @@ public class Main {
 
         List<Statistics> statisticsList = StatisticCollectionUtil.statisticsCollection(students, universities);
         XLSWriter.statisticsWriter(statisticsList, statisticsPath);
+
+        ModelsLists modelLists = new ModelsLists()
+                .setStudentList(students)
+                .setUniversityList(universities)
+                .setStatisticsList(statisticsList);
+        JaxbUtil.writer(modelLists);
+
         logger.log(Level.INFO, "Работа с таблицами окончена");
     }
 }

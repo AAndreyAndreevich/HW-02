@@ -10,8 +10,8 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import enums.StudyProfile;
-import education.Student;
-import education.University;
+import model.Student;
+import model.University;
 
 public class XSSFReader {
     private static final Logger logger = Logger.getLogger(XSSFReader.class.getSimpleName());

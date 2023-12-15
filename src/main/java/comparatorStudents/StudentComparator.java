@@ -1,6 +1,6 @@
 package comparatorStudents;
 
-import education.Student;
+import model.Student;
 
 import java.util.Comparator;
 

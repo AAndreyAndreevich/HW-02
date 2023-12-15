@@ -9,23 +9,23 @@ import java.util.logging.Logger;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import education.Statistics;
+import model.Statistics;
 
 public class XLSWriter {
     private static final Logger logger = Logger.getLogger(XLSWriter.class.getSimpleName());
     private XLSWriter(){}
 
     public static void statisticsWriter(List<Statistics> statisticsList, Path filePath) {
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet = workbook.createSheet("Статистика");
+        CellStyle headStyle = workbook.createCellStyle();
+        Font font = workbook.createFont();
+        font.setBold(true);
+        font.setFontHeight((short)11);
+        font.setFontName("Arial");
+        headStyle.setFont(font);
+        int rowNum = 0;
         try {
-            XSSFWorkbook workbook = new XSSFWorkbook();
-            XSSFSheet sheet = workbook.createSheet("Статистика");
-            CellStyle headStyle = workbook.createCellStyle();
-            Font font = workbook.createFont();
-            font.setBold(true);
-            font.setFontHeight((short)11);
-            font.setFontName("Arial");
-            headStyle.setFont(font);
-            int rowNum = 0;
             Row headRow = sheet.createRow(rowNum++);
             headRow.createCell(0).setCellValue("Профиль обучения");
             headRow.getCell(0).setCellStyle(headStyle);

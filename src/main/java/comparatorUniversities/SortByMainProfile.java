@@ -1,6 +1,6 @@
 package comparatorUniversities;
 
-import education.University;
+import model.University;
 
 public class SortByMainProfile implements UniversityComparator {
     @Override
