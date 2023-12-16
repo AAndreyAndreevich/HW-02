@@ -23,8 +23,8 @@ public class JaxbUtil {
             JAXBContext context = JAXBContext.newInstance(ModelsLists.class);
             Marshaller marshaller = context.createMarshaller();
             try {
-                Files.createDirectory(Paths.get("src\\xmlReqs"));
-                logger.log(Level.INFO, "Папка создана");
+                Files.createDirectory(Paths.get("xmlReqs"));
+                logger.log(Level.INFO, "Папка Jaxb создана");
             } catch (IOException ioEx) {
                 logger.log(Level.SEVERE, "Ошибка {0}", ioEx.getMessage());
             }
@@ -34,6 +34,6 @@ public class JaxbUtil {
         } catch (JAXBException jaxbE) {
             logger.log(Level.SEVERE, "Ошибка {0}", jaxbE.getMessage());
         }
-        logger.log(Level.INFO, "Работа JAXB окончена");
+        logger.log(Level.INFO, "Работа Jaxb окончена");
     }
 }

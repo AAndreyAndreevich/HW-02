@@ -6,6 +6,7 @@ import utils.*;
 
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
@@ -16,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             LogManager.getLogManager().readConfiguration(
-                    Main.class.getResourceAsStream("/logging.properties"));
+                    Main.class.getResourceAsStream("logging.properties"));
         } catch (IOException e) {
             System.err.println("Отсутствует конфигурация " + e.getMessage());
         }
@@ -41,8 +42,10 @@ public class Main {
         ModelsLists modelLists = new ModelsLists()
                 .setStudentList(students)
                 .setUniversityList(universities)
-                .setStatisticsList(statisticsList);
+                .setStatisticsList(statisticsList)
+                .setDate(new Date());
         JaxbUtil.writer(modelLists);
+        JsonUtil.writer(modelLists);
 
         logger.log(Level.INFO, "Работа с таблицами окончена");
     }

@@ -8,7 +8,6 @@ model\University.class
 enums\EnumComparatorStudents.class
 model\Student.class
 comparatorStudents\SortByAvgExamScore.class
-utils\JsonUtil$2.class
 comparatorUniversities\SortByShortName.class
 comparatorUniversities\SortByYearOfFoundation.class
 utils\JaxbUtil.class
@@ -23,6 +22,5 @@ utils\XLSWriter.class
 utils\StatisticCollectionUtil.class
 utils\XSSFReader.class
 model\ModelsLists.class
-utils\JsonUtil$1.class
 utils\SwitchComparator.class
 comparatorStudents\SortByFullStudentName.class
