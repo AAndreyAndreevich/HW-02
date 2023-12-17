@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Данные>
+    <studentList>
+        <studentList>
+            <universityId>0001-high</universityId>
+            <name>Витальев В. А.</name>
+            <course>2</course>
+            <avg>4.0</avg>
+        </studentList>
+        <studentList>
+            <universityId>0001-high</universityId>
+            <name>Петров П. А.</name>
+            <course>1</course>
+            <avg>5.0</avg>
+        </studentList>
+        <studentList>
+            <universityId>0001-high</universityId>
+            <name>Алексеев С. В.</name>
+            <course>1</course>
+            <avg>5.0</avg>
+        </studentList>
+        <studentList>
+            <universityId>0001-high</universityId>
+            <name>Иванов А. Г.</name>
+            <course>3</course>
+            <avg>4.8</avg>
+        </studentList>
+        <studentList>
+            <universityId>0001-high</universityId>
+            <name>Васильев В. П.</name>
+            <course>4</course>
+            <avg>4.7</avg>
+        </studentList>
+        <studentList>
+            <universityId>0002-high</universityId>
+            <name>Иванов И. А.</name>
+            <course>2</course>
+            <avg>4.0</avg>
+        </studentList>
+        <studentList>
+            <universityId>0002-high</universityId>
+            <name>Козлов М. В.</name>
+            <course>2</course>
+            <avg>4.6</avg>
+        </studentList>
+        <studentList>
+            <universityId>0002-high</universityId>
+            <name>Фёдоров А. И.</name>
+            <course>3</course>
+            <avg>4.2</avg>
+        </studentList>
+        <studentList>
+            <universityId>0003-high</universityId>
+            <name>Игнатьев М. М.</name>
+            <course>4</course>
+            <avg>4.3</avg>
+        </studentList>
+        <studentList>
+            <universityId>0004-high</universityId>
+            <name>Соколов В. В.</name>
+            <course>1</course>
+            <avg>4.8</avg>
+        </studentList>
+        <studentList>
+            <universityId>0004-high</universityId>
+            <name>Сидоров Е. Г.</name>
+            <course>2</course>
+            <avg>3.9</avg>
+        </studentList>
+    </studentList>
+    <universityList>
+        <universityList>
+            <id>0001-high</id>
+            <name>Московский Выдуманный Университет</name>
+            <shortName>МВУ</shortName>
+            <yearOfFoundation>1990</yearOfFoundation>
+            <profile>PHYSICS</profile>
+        </universityList>
+        <universityList>
+            <id>0002-high</id>
+            <name>Московский Придуманный Институт</name>
+            <shortName>МПИ</shortName>
+            <yearOfFoundation>1987</yearOfFoundation>
+            <profile>PHYSICS</profile>
+        </universityList>
+        <universityList>
+            <id>0003-high</id>
+            <name>Московский Государственный Медицинский Университет</name>
+            <shortName>МГМУ</shortName>
+            <yearOfFoundation>1960</yearOfFoundation>
+            <profile>MEDICINE</profile>
+        </universityList>
+        <universityList>
+            <id>0004-high</id>
+            <name>Тамбовский Университет Медицины</name>
+            <shortName>ТУМ</shortName>
+            <yearOfFoundation>1995</yearOfFoundation>
+            <profile>MEDICINE</profile>
+        </universityList>
+        <universityList>
+            <id>0005-high</id>
+            <name>Самарский Медицинский Институт</name>
+            <shortName>СМИ</shortName>
+            <yearOfFoundation>1936</yearOfFoundation>
+            <profile>MEDICINE</profile>
+        </universityList>
+        <universityList>
+            <id>0006-high</id>
+            <name>Воронежский Литературно-Переводческий Университет</name>
+            <shortName>ВЛПУ</shortName>
+            <yearOfFoundation>2003</yearOfFoundation>
+            <profile>LINGUISTICS</profile>
+        </universityList>
+        <universityList>
+            <id>0007-high</id>
+            <name>Казанский Университет Вычислений</name>
+            <shortName>КУВ</shortName>
+            <yearOfFoundation>1989</yearOfFoundation>
+            <profile>MATHEMATICS</profile>
+        </universityList>
+    </universityList>
+    <statisticsList>
+        <statisticsList>
+            <profile>PHYSICS</profile>
+            <avg>4.54</avg>
+            <numberOfStudents>8</numberOfStudents>
+            <numberOfUniversities>2</numberOfUniversities>
+            <universityName>Московский Выдуманный Университет;Московский Придуманный Институт;</universityName>
+        </statisticsList>
+        <statisticsList>
+            <profile>LINGUISTICS</profile>
+            <avg>0.0</avg>
+            <numberOfStudents>0</numberOfStudents>
+            <numberOfUniversities>1</numberOfUniversities>
+            <universityName>Воронежский Литературно-Переводческий Университет;</universityName>
+        </statisticsList>
+        <statisticsList>
+            <profile>MEDICINE</profile>
+            <avg>4.33</avg>
+            <numberOfStudents>3</numberOfStudents>
+            <numberOfUniversities>3</numberOfUniversities>
+            <universityName>Московский Государственный Медицинский Университет;Тамбовский Университет Медицины;Самарский Медицинский Институт;</universityName>
+        </statisticsList>
+        <statisticsList>
+            <profile>MATHEMATICS</profile>
+            <avg>0.0</avg>
+            <numberOfStudents>0</numberOfStudents>
+            <numberOfUniversities>1</numberOfUniversities>
+            <universityName>Казанский Университет Вычислений;</universityName>
+        </statisticsList>
+    </statisticsList>
+    <date>2023-12-17T14:18:46.994+03:00</date>
+</Данные>

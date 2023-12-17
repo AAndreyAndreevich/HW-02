@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -28,7 +30,8 @@ public class JaxbUtil {
             } catch (IOException ioEx) {
                 logger.log(Level.SEVERE, "Ошибка {0}", ioEx.getMessage());
             }
-            File createReq = new File("xmlReqs\\req"+ new Date().getTime() +".xml");
+            DateFormat df = new SimpleDateFormat("dd-MMM-yyy HH-mm");
+            File createReq = new File("xmlReqs\\req " + (df.format(new Date().getTime())) + ".xml");
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             marshaller.marshal(modelLists, createReq);
         } catch (JAXBException jaxbE) {

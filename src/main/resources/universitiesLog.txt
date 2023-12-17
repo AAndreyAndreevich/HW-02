@@ -1,19 +1,19 @@
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-дек. 16, 2023 4:29:33 PM utils.XSSFReader universitiesReader
+дек. 17, 2023 2:18:46 PM utils.XSSFReader universitiesReader
 INFO: Получен список Университетов
-дек. 16, 2023 4:29:33 PM utils.XSSFReader studentsReader
+дек. 17, 2023 2:18:46 PM utils.XSSFReader studentsReader
 INFO: Получен список Студентов
-дек. 16, 2023 4:29:33 PM utils.StatisticCollectionUtil statisticsCollection
+дек. 17, 2023 2:18:46 PM utils.StatisticCollectionUtil statisticsCollection
 INFO: Собрана статистика Университетов
-дек. 16, 2023 4:29:34 PM utils.XLSWriter statisticsWriter
+дек. 17, 2023 2:18:46 PM utils.XLSWriter statisticsWriter
 INFO: Статистика внесена в таблицу
-дек. 16, 2023 4:29:34 PM utils.JaxbUtil writer
-INFO: Папка Jaxb создана
-дек. 16, 2023 4:29:34 PM utils.JaxbUtil writer
+дек. 17, 2023 2:18:47 PM utils.JaxbUtil writer
+SEVERE: Ошибка xmlReqs
+дек. 17, 2023 2:18:47 PM utils.JaxbUtil writer
 INFO: Работа Jaxb окончена
-дек. 16, 2023 4:29:34 PM utils.JsonUtil writer
-INFO: Папка Json создана
-дек. 16, 2023 4:29:34 PM utils.JsonUtil writer
+дек. 17, 2023 2:18:47 PM utils.JsonUtil writer
+SEVERE: Ошибка jsonReqs
+дек. 17, 2023 2:18:47 PM utils.JsonUtil writer
 INFO: Работа Json окончена
-дек. 16, 2023 4:29:34 PM Main main
+дек. 17, 2023 2:18:47 PM Main main
 INFO: Работа с таблицами окончена

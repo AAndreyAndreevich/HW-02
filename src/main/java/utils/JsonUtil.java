@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,9 +21,10 @@ public class JsonUtil {
 
     private static void students(ModelsLists modelsLists) {
         String studentsJson = JsonUtil.writeListToJson(modelsLists.getStudentList());
+        DateFormat df = new SimpleDateFormat("dd-MMM-yyy HH-mm");
         try {
-            FileOutputStream fos = new FileOutputStream("jsonReqs\\students"+ modelsLists.getDate().getTime()
-                    +".json");
+            FileOutputStream fos = new FileOutputStream("jsonReqs\\students " +
+                    (df.format(modelsLists.getDate().getTime())) + ".json");
             fos.write(studentsJson.getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Ошибка {0}", e.getMessage());
@@ -30,9 +33,10 @@ public class JsonUtil {
 
     private static void universities(ModelsLists modelsLists) {
         String universitiesJson = JsonUtil.writeListToJson(modelsLists.getUniversityList());
+        DateFormat df = new SimpleDateFormat("dd-MMM-yyy HH-mm");
         try {
-            FileOutputStream fos = new FileOutputStream("jsonReqs\\universities"+ modelsLists.getDate().getTime()
-                    +".json");
+            FileOutputStream fos = new FileOutputStream("jsonReqs\\universities " +
+                    (df.format(modelsLists.getDate().getTime())) + ".json");
             fos.write(universitiesJson.getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Ошибка {0}", e.getMessage());
@@ -41,9 +45,10 @@ public class JsonUtil {
 
     private static void statistics(ModelsLists modelsLists) {
         String statisticsJson = JsonUtil.writeListToJson(modelsLists.getStatisticsList());
+        DateFormat df = new SimpleDateFormat("dd-MMM-yyy HH-mm");
         try {
-            FileOutputStream fos = new FileOutputStream("jsonReqs\\statistics"+ modelsLists.getDate().getTime()
-                    +".json");
+            FileOutputStream fos = new FileOutputStream("jsonReqs\\statistics " +
+                    (df.format(modelsLists.getDate().getTime())) + ".json");
             fos.write(statisticsJson.getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Ошибка {0}", e.getMessage());
